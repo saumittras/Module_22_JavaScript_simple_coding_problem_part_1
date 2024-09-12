@@ -1,7 +1,11 @@
-let a = 5;
-let b = "hello";
+/**
+Task-5:
+Generate a random number between 10 to 20.
+ * 
+ */
 
-[a, b] = [b, a];
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-console.log(a); // 'hello'
-console.log(b);
+console.log(randomNumber(10, 20));
